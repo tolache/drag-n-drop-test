@@ -1,4 +1,4 @@
-# Drag-n-drop Test
+# Drag-n-Drop Test
 
 This is a sample project for testing drag-n-drop functionality in JavaScript/TypeScript.
 
