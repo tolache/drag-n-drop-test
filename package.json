@@ -1,7 +1,9 @@
 {
   "scripts": {
     "start": "node dist/server.js",
-    "build": "tsc"
+    "build": "npm run clean && tsc && npm run copyFiles",
+    "clean": "rm -r dist",
+    "copyFiles": "cp src/public/*.html src/public/*.css dist/public"
   },
   "devDependencies": {
     "@types/express": "^5.0.0",
