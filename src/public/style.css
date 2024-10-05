@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*** DEBUG ***/
+    /*background: #000 !important;*/
+    /*color: #0f0 !important;*/
+    /*outline: solid #f00 1px !important;*/
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+#main-container {
+    display: flex;
+    margin: 1em;
+}
+
+.drag-area {
+    width: 200px;
+    height: 250px;
+    margin: 1em;
+    border-radius: 5px;
+}
+
+.hovered {
+    border: 2px dashed #cccccc;
+}
+
+#left-drag-area {
+    background-color: #ffe0e0;
+}
+
+#right-drag-area {
+    background-color: #e0ffe0;
+}
+
+.item {
+    margin: 5px;
+    padding: 1em;
+    border-radius: 5px;
+    width: fit-content;
+    background-color: white;
+}
+
+.is-drag-in-progress .item
+{
+    pointer-events:none;
+}
