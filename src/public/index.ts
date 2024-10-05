@@ -41,6 +41,9 @@ function dragEndHandler() {
 
 function dragOverHandler(event: DragEvent) {
     event.preventDefault()
+    if (event.dataTransfer) {
+        event.dataTransfer.dropEffect = "move"
+    }
 }
 
 function dragEnterHandler(event: DragEvent) {
